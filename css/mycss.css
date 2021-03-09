@@ -156,35 +156,30 @@ div.fixed {
     line-height: 1.42857;
 }
 .jumbotron-bg1 {
-	background-image: url("../fig/INV-0011-Banner11.png");
+	background-image: url("../fig/EGB-011-Banner-11.jpeg");
 	background-size: cover;
 	background-position: center center;
 	min-height: 300px
 }
 .jumbotron-bg2 {
-	background-image: url("../fig/INV-0011-Banner21.jpg");
+	background-image: url("../fig/EGB-011-Banner-21.jpg");
 	background-size: cover;
 	background-position: center center;
 	min-height: 300px
 }
 .jumbotron-bg3 {
-	background-image: url("../fig/INV-0011-Banner31.jpg");
+	background-image: url("../fig/EGB-011-Banner-31.jpg");
 	background-size: cover;
 	background-position: center center;
 	min-height: 300px
 }
 .jumbotron-bg4 {
-	background-image: url("../fig/INV-0011-Banner41.jpg");
+	background-image: url("../fig/EGB-011-Banner-41.jpg");
 	background-size: cover;
 	background-position: center center;
 	min-height: 300px
 }
-.jumbotron-bg5 {
-	background-image: url("../fig/INV-0011-Banner51.jpg");
-	background-size: cover;
-	background-position: center center;
-	min-height: 300px
-}
+
 .bg-lighter {
 		background-color: rgba(0,0,0,.4)
 }
