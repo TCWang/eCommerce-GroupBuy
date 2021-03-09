@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/EGB-01-Template01.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Bootstrap 4 CSS 的 CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Fontawesom 的 CDN -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!-- Google Icons CDN  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- My CSS file -->
+<link rel="stylesheet" href="css/mycss.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>社區團購網-產品瀏覽</title>
+<meta name="description" content="Group Buy Website">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- Vue實例的掛載點 -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="#"> 社區團購網 </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> <i class="fas fa-shopping-cart">社區團購</i> </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="EGB-110-Login.html">登入/註冊</a> <a class="dropdown-item" href="EGB-120-Products.html">商品瀏覽</a> <a class="dropdown-item" href="EGB-130-Member.html">會員資訊</a> <a class="dropdown-item" href="EGB-140-ContactUs.html">聯絡我們</a> </div>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> <i class="fas fa-shopping-basket"></i>二手市場 </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="EGB-210-SecondHand.html">二手商品</a> <a class="dropdown-item" href="EGB-220-ForSale.html">我要賣出</a> </div>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> <i class="fas fa-store"></i>新林口商店街 </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="EGB-310-Shopping.html">商店匯總</a> <a class="dropdown-item" href="EGB-320-ShoppingByArea.html">商場資訊</a> <a class="dropdown-item" href="EGB-330-ShoppingByCategory.html">商品類別</a> </div>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> <i class="fas fa-utensils"></i>餐廳小吃 </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="EGB-410-Restaurant.html">餐廳匯總</a> <a class="dropdown-item" href="EGB-420-RestaurantByArea.html">地區分類</a> <a class="dropdown-item" href="EGB-430-RestaurantByCategory.html">類別分類</a> </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Jumbotron--> 
+
+<!-- InstanceBeginEditable name="jumbotron description " -->
+<div class="jumbotron jumbotron-fluid jumbotron-bg1 d-flex align-items-end">
+  <div class="container">
+    <div class="bg-lighter p-1" style="width:300px">
+      <h4 class="text-white" >社區團購</h4>
+      <p class="lead text-white">A7 新林口 社區團購網站</p>
+    </div>
+  </div>
+</div>
+<!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="main_editable" -->
+<article> 
+  <div class="container-fluid mt-1">
+    <div class="row">
+      <div class="col-md-3 col-lg-2">
+        <h3>網購平台</h3>
+        <div class="list-group" id="MenuList" role="tablist"> <a href="#Menu-B11" class="list-group-item list-group-item-action active" data-toggle="list">社區團購-樂捷市</a> <br>
+        </div>
+      </div>
+      <div class="col-md-9 col-lg-10">
+        <div class="tab-content"> 
+          <!-- Menu B11 -->
+          <div class="tab-pane active" id="Menu-B11" role="tabpanel">
+            <div id="app11" class="row mb-1">
+              <div class="container-fluid mt-3">
+                <div class="row">
+                  <h3>社區團購</h3>
+                  <ul style="list-style-type:none">
+                    <li>注意：本網頁目前開發/測試中 - 部分團購範例僅供參考 </li>
+                    <li>
+                      <div class="text-danger">對相關產品正式採購與查詢, 請仍使用 LINE 群組 - 樂捷團購超市</div>
+                    </li>
+                  </ul>
+                  <div class="container-fluid">
+                    <div class="alert alert-info mt-2" role="alert">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="form-group">
+                            <select class="form-control" v-model='section' id="exampleFormControlSelect1">
+                              <option v-for="section in sections">{{ section }} </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <h5 class="text-left"> 選擇 類別 </h5>
+                        </div>
+						<div class="col-3">
+						  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-01">
+							<i class="fas fa-shopping-cart"></i>購物車 </button>
+						</div>						  
+                      </div>
+                    </div>
+                    <div class="row" v-for="posts in results">
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" v-for="post in posts">
+                        <div class="card">
+                          <div class="card-header"> <a v-bind:href="post.Link"> {{ post.Product}} </a> </div>
+                          <div class="card-body">
+                            <div v-html="post.FigureMain"></div>
+                            <br>
+                            <dl>
+                              <dd>產品選項:{{  post.Product}} </dd>
+                              <dd>團購價： {{  post.GroupPrice}}</dd>
+                            </dl>
+							  
+							<div class="btn-group btn-group-sm">
+							  <button class="border-primary" v-bind:disabled="post.count === 0"
+								v-on:click="post.count--">-</button>
+							  <span
+								class="px-3 border border-primary-top-2 border-primary-bottom-2">{{ post.count }}</span>
+							  <button class="border-primary" v-on:click="post.count++">+</button>
+							</div>	
+							  
+						  
+
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                  <p class="panel-title"> <a role="button" data-toggle="collapse"
+                                          data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                          aria-controls="collapseOne"> 展開/折疊 說明欄 </a> </p>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                      aria-labelledby="headingOne">
+                                  <div class="panel-body">
+									<dl>
+									  <dd>
+										<div class="text-primary">湊團期限：{{post.DueDate}}
+										  {{post.DueTime}} </div>
+									  </dd>
+									  <dd>湊團下限：{{post.Quantity}} </dd>
+									  <dd>團購提供者：{{post.Owner}} </dd>
+									</dl>										  
+                                    <div v-html="post.ProductInformation"></div><br>
+                                    <div v-html="post.ProductSpec"></div><br>									  
+                            		<div v-html="post.FigureMore"></div>									  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="text-right"> <a v-bind:href="post.Detail" target="_blank">採購下單</a> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+				  
+              </div>
+				
+                  <!-- Modal-06 -->
+                  <div class="modal fade" id="Modal-01" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel01" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">點餐清單 - 越南小吃</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                              aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+
+                          <!-- 購物車匯總資料 -->
+                          <div class="row mt-0">
+                            <table class="mt-0" style="width:100%">
+                              <tr>
+                                <th style="text-align:right;">名稱</th>
+                                <th style="text-align:right;">單價</th>
+                                <th style="text-align:center;">數量</th>
+                                <th style="text-align:right;">金額</th>
+                              </tr>
+                              <div class="row" v-for="posts in results">
+                                <tr v-for="post in posts" v-if="post.count !== '0' ">
+                                  <td style="text-align:right;">{{post.Product}} </td>
+                                  <td style="text-align:right;">{{post.GroupPrice}} </td>
+                                  <td style="text-align:center;">{{post.count}} </td>
+                                  <td style="text-align:right;">{{itemPrice(post.GroupPrice, post.count) }} </td>
+                                </tr>
+                              </div>
+                            </table>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-8"> </div>
+                            <div class="col">
+                              <p style="background-color:yellow"> 總價：{{totalPrice}} </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                          <button type="button" class="btn btn-primary">結帳</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>				
+				
+            </div>
+          </div>
+        </div>
+        
+        <!-- 插入下一項 --> 
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!-- InstanceEndEditable -->
+<footer id="main_footer">
+  <p id="p-footer"> &copy; TCW 社區團購網 </p>
+</footer>
+
+<!-- Vue 的 CDN --> 
+<script src="https://unpkg.com/vue/dist/vue.js"></script> 
+
+<!-- Bootstrap 4 JavaScript 的 CDN --> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script> 
+<!-- Axios 的 CDN --> 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		}
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script> 
+<!-- InstanceBeginEditable name="vue control program" --> 
+<script>
+      const posts = []
+      const SECTIONS_GB = "正在熱賣, 經典回味"
+
+      new Vue({
+        el: '#app11',
+        data: {
+          posts,
+          // results: [],
+          sections: SECTIONS_GB.split(', '),
+          section: '正在熱賣'
+        },
+        filter: {
+          formatted(value) {
+            return ' 以下是 ${value} 類別的貼文 '
+          }
+        },
+
+        methods: {
+          itemPrice(price, count) {
+            return price * count;
+          },
+          deleteItem(index) {
+            this.posts.splice(index, 1);
+          }
+        },
+
+        computed: {
+          results() {
+            let posts = this.posts
+              .slice()
+              .filter(post => post.Category === this.section)
+            let i, j, chunkedArray = [], chunk = 400;
+            for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+              chunkedArray[j] = posts.slice(i, i + chunk);
+            }
+            return chunkedArray
+          },
+
+          totalPrice() {
+            let posts = this.posts
+              .slice()
+              .filter(post => post.Category === this.section);
+            let total = 0;
+            for (let post of this.posts) {
+              total += post.price * post.count;
+            }
+            return total;
+          }
+        },
+
+        mounted() {
+          axios.get('db/EGB-121-GroupBuy-03.json').then((response) => {
+            this.posts = response.data;
+            this.getPostsByCategory(this.section)
+          }).catch(error => { console.log(error); });
+        },
+
+      });
+
+    </script> 
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd -->
+</html>
